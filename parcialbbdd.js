@@ -26,7 +26,7 @@
 
 use cafeteria;
 
-db.cafes.instertMany([
+db.cafes.insertMany([
     {
         tipo: "filtrado",
         ingredientes: ["chocolate", "canela"],
@@ -39,7 +39,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
             localidad: "San Justo",
-            nombre: "Tostadora San Justo",
+            nombre: "Tostador San Justo",
             cuit: "20-47333177-3"
         }
     },
@@ -55,7 +55,7 @@ db.cafes.instertMany([
         contieneLeche: true,
         tostador: {
             localidad: "San Juan",
-            nombre: "Tostadora San Juan",
+            nombre: "Tostador San Juan",
             cuit: "20-47444288-3"
         }
     },
@@ -71,7 +71,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
             localidad: "San Martin",
-            nombre: "Tostadora San Martin",
+            nombre: "Tostador San Martin",
             cuit: "20-47555399-3"
         }
     },
@@ -87,7 +87,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
             localidad: "Lanus",
-            nombre: "Tostadora Lanus",
+            nombre: "Tostador Lanus",
             cuit: "20-47666411-3"
         }
     },
@@ -103,7 +103,7 @@ db.cafes.instertMany([
         contieneLeche: true,
         tostador: {
             localidad: "La Plata",
-            nombre: "Tostadora La Plata",
+            nombre: "Tostador La Plata",
             cuit: "20-47777522-3"
         }
     },
@@ -119,7 +119,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
             localidad: "San Fernando",
-            nombre: "Tostadora San Fernando",
+            nombre: "Tostador San Fernando",
             cuit: "20-47888633-3"
         }
     },
@@ -135,7 +135,7 @@ db.cafes.instertMany([
         contieneLeche: true,
         tostador: {
             localidad: "Rosario",
-            nombre: "Tostadora Rosario",
+            nombre: "Tostador Rosario",
             cuit: "20-47999744-3"
         }
     },
@@ -151,7 +151,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
         localidad: "Mar del Plata",
-        nombre: "Tostadora Mdq",
+        nombre: "Tostador Mdq",
         cuit: "20-47000855-3"
         }
     },
@@ -167,7 +167,7 @@ db.cafes.instertMany([
         contieneLeche: true,
         tostador: {
         localidad: "San Miguel",
-        nombre: "Tostadora San Miguel",
+        nombre: "Tostador San Miguel",
         cuit: "20-47111966-3"
         }
     },
@@ -183,7 +183,7 @@ db.cafes.instertMany([
         contieneLeche: false,
         tostador: {
         localidad: "Avellaneda",
-        nombre: "Tostadora Avellaneda",
+        nombre: "Tostador Avellaneda",
         cuit: "20-47222077-3"
         }
     },
@@ -199,7 +199,7 @@ db.cafes.instertMany([
         contieneLeche: true,
         tostador: {
         localidad: "Santos Lugares",
-        nombre: "Tostadora Santos Lugares",
+        nombre: "Tostador Santos Lugares",
         cuit: "20-40333188-3"
         }
     }
@@ -225,7 +225,7 @@ db.cafes.instertMany([
     //y que se muestren también los de “santos”, “san justo”, etc. Ordenar el resultado por peso de manera
     //descendente.
     db.cafes.find(
-        {"tostadora.localidad": /san/i}     
+        {"tostador.localidad": /san/i}     
     ).sort({ peso: -1 }); //busca en localidad si contiene san sin importas mayus o minus, despues ordena campo peso en descendente
 
     //7) Mostrar la sumar del peso de cada tipo de Café.
