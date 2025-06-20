@@ -20,7 +20,7 @@
 //y que se muestren también los de “santos”, “san justo”, etc. Ordenar el resultado por peso de manera
 //descendente.
 //7) Mostrar la sumar del peso de cada tipo de Café.
-//8) Agregar el ingrediente “whisky” todos los cafés cuya intensidad es alta.
+//8) Agregar el ingrediente “whisky” todos los cafés cuya intensidad es afgfgflta.
 //9) Sumarle 10 al peso de los cafés cuyo peso se encuentre entre 200 y 260 inclusive.
 //10) Eliminar los cafés cuyo peso sea menor o igual a 210.
 
